@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(C:/Users/Shashwat/AppData/Local/Programs/Python/Python311/python.exe -m pip install pdfplumber)",
+      "Bash(npx create-expo-app@latest . --template blank)",
+      "Read(//c/shashwat/**)",
+      "Bash(npx create-expo-app@latest BrainBeeAppTemp --template blank)",
+      "Bash(cp -r /c/shashwat/BrainBeeAppTemp/* /c/shashwat/BrainBeeApp/)",
+      "Bash(cp /c/shashwat/BrainBeeAppTemp/.gitignore /c/shashwat/BrainBeeApp/)",
+      "Bash(rm -rf /c/shashwat/BrainBeeAppTemp)",
+      "Bash(cp /c/shashwat/BrainBeeAppTemp/package.json /c/shashwat/BrainBeeApp/)",
+      "Bash(cp /c/shashwat/BrainBeeAppTemp/package-lock.json /c/shashwat/BrainBeeApp/)",
+      "Bash(cp \"C:/shashwat/BrainBeeAppTemp/package.json\" \"C:/shashwat/BrainBeeApp/\")",
+      "Bash(cp \"C:/shashwat/BrainBeeAppTemp/package-lock.json\" \"C:/shashwat/BrainBeeApp/\")",
+      "Bash(rm -rf \"C:/shashwat/BrainBeeAppTemp\")",
+      "Bash(npx expo:*)",
+      "Bash(node -e \":*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install:*)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :8081)",
+      "Bash(taskkill //PID 57132 //F)",
+      "Bash(node -e \"console.log\\(require\\(''react-native/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\(''react/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(''react:'', require\\(''react/package.json''\\).version, ''rn:'', require\\(''react-native/package.json''\\).version\\)\")",
+      "Bash(findstr LISTENING)",
+      "Bash(node -e \"console.log\\(''react:'', require\\(''react/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(''expo:'', require\\(''expo/package.json''\\).version, ''rn:'', require\\(''react-native/package.json''\\).version\\)\")",
+      "Bash(node -e \"console.log\\(''expo:'', require\\(''expo/package.json''\\).version, ''rn:'', require\\(''react-native/package.json''\\).version, ''react:'', require\\(''react/package.json''\\).version\\)\")",
+      "Bash(node -e \"const rn = require\\(''react-native/package.json''\\); console.log\\(''RN peer react:'', rn.peerDependencies?.react\\)\")",
+      "Bash(node -e \"console.log\\(''react:'', require\\(''react/package.json''\\).version, ''rn:'', require\\(''react-native/package.json''\\).version, ''expo:'', require\\(''expo/package.json''\\).version\\)\")",
+      "Bash(curl -s http://localhost:8081/bundle.js)",
+      "Bash(tasklist)",
+      "Bash(taskkill //PID 57544 //F)",
+      "Bash(taskkill //PID 60276 //F)",
+      "Bash(taskkill //PID 1500 //F)",
+      "Bash(taskkill //PID 30516 //F)",
+      "Bash(taskkill //PID 3936 //F)"
+    ]
+  }
+}

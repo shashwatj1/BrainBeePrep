@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Brain Bee Prep",
+    "slug": "BrainBeePrep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon2.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icon2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E27"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brainbeeprep.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0E27",
+        "foregroundImage": "./assets/icon2.png"
+      },
+      "package": "com.brainbeeprep.app"
+    },
+    "web": {
+      "favicon": "./assets/icon2.png"
+    }
+  }
+}

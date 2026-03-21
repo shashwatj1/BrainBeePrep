@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Subtle radial glow behind the bee -->
+    <radialGradient id="glow" cx="50%" cy="42%" r="38%">
+      <stop offset="0%" stop-color="#2D5A3D" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0A0E27" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Brain gradient -->
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A7D52"/>
+      <stop offset="100%" stop-color="#2D5A3D"/>
+    </linearGradient>
+    <!-- Wing gradient -->
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+    <!-- Orange accent gradient -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8853A"/>
+      <stop offset="100%" stop-color="#C96A28"/>
+    </linearGradient>
+    <!-- Neuron tip glow -->
+    <radialGradient id="tipGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8853A"/>
+      <stop offset="60%" stop-color="#E8853A" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E8853A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background: dark navy with rounded corners for App Store -->
+  <rect width="1024" height="1024" rx="224" fill="#0A0E27"/>
+
+  <!-- Subtle glow -->
+  <ellipse cx="512" cy="400" rx="320" ry="300" fill="url(#glow)"/>
+
+  <!-- === NEURON ANTENNAE === -->
+  <!-- Left antenna - curved neuron axon -->
+  <path d="M 440 310 Q 400 240 350 200 Q 310 170 280 130"
+        stroke="#E8853A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Left antenna dendrite branches -->
+  <path d="M 310 170 Q 290 150 270 155" stroke="#E8853A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 330 185 Q 315 165 300 170" stroke="#E8853A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 295 145 Q 275 125 265 130" stroke="#E8853A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Left antenna synapse bulb -->
+  <circle cx="280" cy="130" r="14" fill="url(#orangeGrad)"/>
+  <circle cx="280" cy="130" r="22" fill="url(#tipGlow)"/>
+  <!-- Small synaptic vesicles -->
+  <circle cx="268" cy="118" r="3" fill="#E8853A" opacity="0.5"/>
+  <circle cx="290" cy="120" r="2.5" fill="#E8853A" opacity="0.4"/>
+  <circle cx="275" cy="140" r="2" fill="#E8853A" opacity="0.3"/>
+
+  <!-- Right antenna - curved neuron axon -->
+  <path d="M 584 310 Q 624 240 674 200 Q 714 170 744 130"
+        stroke="#E8853A" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Right antenna dendrite branches -->
+  <path d="M 714 170 Q 734 150 754 155" stroke="#E8853A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 694 185 Q 709 165 724 170" stroke="#E8853A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 729 145 Q 749 125 759 130" stroke="#E8853A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Right antenna synapse bulb -->
+  <circle cx="744" cy="130" r="14" fill="url(#orangeGrad)"/>
+  <circle cx="744" cy="130" r="22" fill="url(#tipGlow)"/>
+  <!-- Small synaptic vesicles -->
+  <circle cx="756" cy="118" r="3" fill="#E8853A" opacity="0.5"/>
+  <circle cx="734" cy="120" r="2.5" fill="#E8853A" opacity="0.4"/>
+  <circle cx="749" cy="140" r="2" fill="#E8853A" opacity="0.3"/>
+
+  <!-- === WINGS (translucent, behind body) === -->
+  <!-- Left wing -->
+  <ellipse cx="360" cy="370" rx="110" ry="55" transform="rotate(-25 360 370)"
+           fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.2"/>
+  <ellipse cx="340" cy="400" rx="85" ry="40" transform="rotate(-35 340 400)"
+           fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.15"/>
+  <!-- Right wing -->
+  <ellipse cx="664" cy="370" rx="110" ry="55" transform="rotate(25 664 370)"
+           fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.2"/>
+  <ellipse cx="684" cy="400" rx="85" ry="40" transform="rotate(35 684 400)"
+           fill="url(#wingGrad)" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.15"/>
+
+  <!-- === BRAIN-SHAPED BODY === -->
+  <!-- Main brain shape (two hemispheres) -->
+  <g transform="translate(512, 430)">
+    <!-- Left hemisphere -->
+    <path d="M -8 -120
+             Q -60 -125 -100 -105
+             Q -145 -80 -155 -40
+             Q -165 0 -150 40
+             Q -140 70 -120 90
+             Q -95 115 -60 125
+             Q -30 132 -8 130"
+          fill="url(#brainGrad)" stroke="#4A9D6A" stroke-width="2"/>
+    <!-- Right hemisphere -->
+    <path d="M 8 -120
+             Q 60 -125 100 -105
+             Q 145 -80 155 -40
+             Q 165 0 150 40
+             Q 140 70 120 90
+             Q 95 115 60 125
+             Q 30 132 8 130"
+          fill="url(#brainGrad)" stroke="#4A9D6A" stroke-width="2"/>
+
+    <!-- Central fissure (longitudinal) -->
+    <line x1="0" y1="-120" x2="0" y2="130" stroke="#1A3D28" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Brain sulci - Left hemisphere -->
+    <!-- Lateral fissure -->
+    <path d="M -20 10 Q -60 0 -100 15 Q -130 25 -145 10"
+          stroke="#1A3D28" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Superior frontal sulcus -->
+    <path d="M -25 -80 Q -55 -75 -80 -65 Q -100 -55 -110 -45"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Inferior frontal sulcus -->
+    <path d="M -20 -45 Q -50 -40 -80 -30 Q -110 -20 -130 -15"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Precentral sulcus -->
+    <path d="M -30 -100 Q -45 -70 -50 -35"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Central sulcus (left) -->
+    <path d="M -15 -110 Q -35 -85 -45 -50 Q -55 -15 -50 15"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Post-central area -->
+    <path d="M -25 40 Q -55 50 -85 55 Q -110 60 -130 55"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <!-- Temporal sulci -->
+    <path d="M -25 65 Q -55 70 -90 80 Q -110 85 -120 90"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M -30 90 Q -60 95 -90 100 Q -105 105 -110 110"
+          stroke="#1A3D28" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Brain sulci - Right hemisphere (mirrored) -->
+    <path d="M 20 10 Q 60 0 100 15 Q 130 25 145 10"
+          stroke="#1A3D28" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 25 -80 Q 55 -75 80 -65 Q 100 -55 110 -45"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 20 -45 Q 50 -40 80 -30 Q 110 -20 130 -15"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 30 -100 Q 45 -70 50 -35"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M 15 -110 Q 35 -85 45 -50 Q 55 -15 50 15"
+          stroke="#1A3D28" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 25 40 Q 55 50 85 55 Q 110 60 130 55"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M 25 65 Q 55 70 90 80 Q 110 85 120 90"
+          stroke="#1A3D28" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M 30 90 Q 60 95 90 100 Q 105 105 110 110"
+          stroke="#1A3D28" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- === BEE EYES === -->
+  <!-- Left eye -->
+  <circle cx="470" cy="330" r="16" fill="#0F1535" stroke="#4A9D6A" stroke-width="2.5"/>
+  <circle cx="474" cy="326" r="5" fill="#FFFFFF" opacity="0.7"/>
+  <!-- Right eye -->
+  <circle cx="554" cy="330" r="16" fill="#0F1535" stroke="#4A9D6A" stroke-width="2.5"/>
+  <circle cx="558" cy="326" r="5" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- === BEE STRIPES (subtle, on the brain body) === -->
+  <path d="M 410 470 Q 460 480 512 482 Q 564 480 614 470"
+        stroke="#C96A28" stroke-width="6" fill="none" opacity="0.35" stroke-linecap="round"/>
+  <path d="M 395 510 Q 455 522 512 524 Q 569 522 629 510"
+        stroke="#C96A28" stroke-width="6" fill="none" opacity="0.35" stroke-linecap="round"/>
+
+  <!-- === STINGER === -->
+  <path d="M 512 560 L 520 585 L 512 600 L 504 585 Z" fill="url(#orangeGrad)"/>
+
+  <!-- === TEXT: "Brain Bee Prep" === -->
+  <!-- Main text -->
+  <text x="512" y="710" text-anchor="middle"
+        font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+        font-size="72" font-weight="700" letter-spacing="2" fill="#FFFFFF">
+    Brain Bee Prep
+  </text>
+
+  <!-- Subtle tagline -->
+  <text x="512" y="758" text-anchor="middle"
+        font-family="'SF Pro Display', 'Helvetica Neue', 'Arial', sans-serif"
+        font-size="28" font-weight="400" letter-spacing="6" fill="#4A9D6A" text-transform="uppercase">
+    NEUROSCIENCE STUDY
+  </text>
+
+  <!-- Thin accent line above text -->
+  <line x1="400" y1="670" x2="624" y2="670" stroke="#E8853A" stroke-width="2" opacity="0.6"/>
+</svg>
