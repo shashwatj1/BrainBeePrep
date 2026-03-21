@@ -103,7 +103,24 @@ export default function MoreScreen({ navigation }) {
               Content from Brain Facts: A Primer on the Brain and Nervous System, 8th Edition, Society for Neuroscience, 2018.
             </Text>
           </View>
+
+          <View style={styles.divider} />
+
+          <View style={styles.aboutBlock}>
+            <View style={styles.aboutHeader}>
+              <Text style={styles.aboutEmoji}>👨‍💻</Text>
+              <Text style={styles.aboutTitle}>Created By</Text>
+            </View>
+            <Text style={styles.aboutText}>
+              Designed and developed by Shashwat Jaipuriar
+            </Text>
+          </View>
         </View>
+
+        {/* Footer */}
+        <Text style={styles.footerText}>
+          © 2026 Shashwat Jaipuriar. All rights reserved.
+        </Text>
 
         {/* Data */}
         <Text style={styles.sectionLabel}>DATA</Text>
@@ -228,6 +245,14 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
 
+  footerText: {
+    color: COLORS.textMuted,
+    fontSize: FONTS.sizes.xs,
+    textAlign: 'center',
+    marginTop: SPACING.xl,
+    marginBottom: SPACING.md,
+    opacity: 0.6,
+  },
   bottomSpacer: {
     height: SPACING.xxl,
   },
