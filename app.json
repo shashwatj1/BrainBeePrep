@@ -13,7 +13,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.brainbeeprep.app"
+      "bundleIdentifier": "com.brainbeeprep.app",
+      "deploymentTarget": "16.0",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -22,8 +26,16 @@
       },
       "package": "com.brainbeeprep.app"
     },
+    "plugins": [
+      "react-native-reanimated"
+    ],
     "web": {
       "favicon": "./assets/icon2.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cd3bd5e7-264a-4c76-b368-07147943e8f7"
+      }
     }
   }
 }
