@@ -26,9 +26,6 @@
       },
       "package": "com.brainbeeprep.app"
     },
-    "plugins": [
-      "react-native-reanimated"
-    ],
     "web": {
       "favicon": "./assets/icon2.png"
     },
