@@ -36,7 +36,17 @@
       "Bash(taskkill //PID 60276 //F)",
       "Bash(taskkill //PID 1500 //F)",
       "Bash(taskkill //PID 30516 //F)",
-      "Bash(taskkill //PID 3936 //F)"
+      "Bash(taskkill //PID 3936 //F)",
+      "Bash(npx eas-cli:*)",
+      "WebFetch(domain:expo.dev)",
+      "WebFetch(domain:job-logs.eascdn.net)",
+      "Bash(npx vercel:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('logsUrls', d.get\\('logUrl', 'not found'\\)\\)\\)\")",
+      "Bash(node -e \"let d=''; process.stdin.on\\('data',c=>d+=c\\); process.stdin.on\\('end',\\(\\)=>{const j=JSON.parse\\(d\\); console.log\\(JSON.stringify\\(j.logsUrls||j.logUrl||'none'\\)\\)}\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node -e \"require\\('react-native-reanimated'\\)\")"
     ]
   }
 }
